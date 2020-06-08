@@ -12,6 +12,7 @@ const Input = ({ id, label, data, setData, type = "text", error }) => (
       onChange={(event) => setData({ ...data, [id]: event.target.value })}
       className="form__input"
       style={{borderColor: error && 'red'}}
+      min="0"
     />
   </label>
 );

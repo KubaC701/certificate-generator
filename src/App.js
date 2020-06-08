@@ -37,6 +37,7 @@ const App = () => {
       <Certificate
         data={data}
         style={{ opacity: successful ? 1 : 0, zIndex: successful ? 300 : 0 }}
+        successful={successful}
       />
     </div>
   );
