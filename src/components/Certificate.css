@@ -1,0 +1,16 @@
+.certificate {
+  height: 100%;
+  width: 100%;
+  transition: opacity 0.5s ease-in-out;
+  position: relative;
+  background-color: var(--background);
+}
+
+.certificate__text {
+  font-size: 20px;
+  fill: var(--dark);
+}
+
+.certificate__text--competition {
+  font-size: 16px;
+}

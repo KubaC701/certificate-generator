@@ -1,0 +1,94 @@
+.welcome {
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 10;
+}
+.welcome::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background);
+}
+
+.welcome__header__wrapper {
+  width: 100%;
+  height: 10rem;
+  position: relative;
+}
+
+.welcome__header,
+.welcome__question {
+  margin: 0;
+  position: absolute;
+  font-size: 4.5rem;
+  transition: opacity 0.4s ease-in;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.welcome__header {
+  font-size: 4.5rem;
+  transition: opacity 0.4s ease-in;
+}
+
+.welcome__question {
+  position: absolute;
+  font-size: 2.5rem;
+  transition: opacity 0.5s 0.5s ease-out;
+}
+.welcome__image {
+  position: relative;
+  height: 40%;
+}
+.welcome__buttons {
+  position: relative;
+  margin-top: 20px;
+}
+.welcome__button {
+  transition: opacity 0.5s 0.8s ease-out;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  margin: 10px;
+  border: solid 2px var(--primary);
+}
+.welcome__button:hover,
+.welcome__button:focus {
+  animation: shake 0.2s;
+}
+.welcome__button:active {
+  transform: scale(0.98);
+}
+.welcome__button--primary {
+  background-color: var(--primary);
+  color: var(--background);
+}
+.welcome__button--secondary {
+  color: var(--dark);
+}
+@keyframes shake {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}

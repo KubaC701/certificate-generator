@@ -1,0 +1,43 @@
+.form {
+  position: absolute;
+  transition: opacity 0.5s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background);
+}
+
+.form__button {
+    width: 20rem;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 5px;
+    color: var(--background);
+    font-size: 24px;
+    outline: none;
+}
+
+.form__button:hover,
+.form__button:focus {
+  animation: shake 0.2s;
+}
+.form__button:active {
+  transform: scale(0.98);
+}
+
+@keyframes shake {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
