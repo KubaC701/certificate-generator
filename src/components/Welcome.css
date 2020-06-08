@@ -57,6 +57,10 @@
 .welcome__buttons {
   position: relative;
   margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .welcome__button {
   transition: opacity 0.5s 0.8s ease-out;
